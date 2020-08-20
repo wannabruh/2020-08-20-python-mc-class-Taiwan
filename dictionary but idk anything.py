@@ -30,11 +30,10 @@ while True:
             else:
                 print('YOU FELL FOR IT FOOL! THUNDER-CROSS SPLIT ATTACK! *write number please ty*')
             
-            if option == '2' :
-                s=sorted(d)
-            
-            for i in s:
-                print(i,':',d[i])
+    elif option == '2' :
+        s=sorted(d)            
+        for i in s:
+            print(i,':',d[i])
                 
     elif option == '3' :
         while True:
@@ -55,12 +54,23 @@ while True:
                 if ch == v:
                     print(ch,'asohfdoashdoasihdohasod',k)
                     
-    elif option == '7' :
-        while True:
-            e = int(input("numbas u have reached hidden place!?!?!"))
-            if e >= 900 :
-                print('kekekekekekekekekekekek not secret noob get recked ez')
-                break
-        else: 
-            print('wannabruh')
-            break
+    elif option == '5' :
+        score = 0
+        for k,v in d.items():
+            print(v)
+            ans = input(':')
+            if ans == k:
+                score = score + 1
+                print('correct')
+            else:
+                print('wrong')
+                
+        print(score)
+        
+        
+        
+        
+        
+        
+        
+        
